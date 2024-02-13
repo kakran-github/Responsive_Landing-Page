@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+@font-face {
+    font-family: a;
+    src: url(Font_&_Images/Gilroy-Black.woff2);
+}
+.main {
+    position: relative;
+    font-family: a;
+}
+nav{
+    height: 12vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0vw 5vw;
+    /* border-bottom: 2px solid #dadada; */
+    font-family: a;
+}
+nav h2{
+    font-size: 1.8vw;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.807);
+}
+.nav-part2 h4{
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.807);
+}
+.nav-part2 button{
+    font-size: 1vw;
+    font-family: a;
+    background-color: #FF735C;
+    color: #fff;
+    border:none;
+    padding: 0.7vw 1.6vw;
+    border-radius: 0.2vw;
+} 
+.nav-part2{
+    display: flex;
+    gap: 3vw;
+    align-items: center; 
+}
+nav i{
+    font-weight: 800;
+    font-size: 2vw; 
+    display: none;
+} 
+.page1{
+    height: calc(100vh - 12vh);
+    width: 100%;
+    display: flex;
+    /* background-color: crimson; */
+}
+.left{
+    height: 100%;
+    width: 50vw;
+    padding: 6vw 5vw;
+    /* background-color: crimson; */
+}
+.left h1{
+    font-size: 3vw;
+    font-weight: 0;
+    color: rgba(0, 0, 0, 0.882);
+    line-height:3.3vw;
+    width: 85%;
+}
+.left h1 span{
+    color: #FF735C;
+}
+.left p{
+    font-size: 1vw;
+    color: rgba(0, 0, 0, 0.519);
+    margin-top: 1.1vw;
+    width: 80%;
+}
+.left button{
+    font-size: 1vw;
+    font-family: a;
+    background-color: #FF735C;
+    color: #fff;
+    border:none;
+    padding: 1.1vw 2.5vw;
+    border-radius: 0.2vw;
+    margin-top: 3vw;
+} 
+.right{
+    height: 100%;
+    width: 50vw;
+    /* background-color: crimson; */
+}
+
+.right img{
+    height: 100%;
+    width: 100%;
+}
+
+@media(max-width:600px){
+    nav{
+        padding: 0vw 6vw;
+        height: 10vh;
+    }
+    nav h2{
+        font-size: 5vw;
+        font-weight: 500;
+    }
+    nav button{
+        display: none;
+    }
+    nav h4{
+        display: none;
+    }
+    nav i{
+        font-size: 5vw;
+        display: block;
+    }
+    .page1{
+        flex-direction: column; 
+    }
+    .left{
+        /* background-color: crimson; */
+        width: 100vw;
+        height: 55vh;
+        padding: 3vw 5vw;
+    }
+    .right{
+        /* background-color: crimson; */
+        width: 100vw;
+        height: 45vh;
+    }
+    .left h1{
+        font-size: 10vw;
+        line-height: 11vw;
+    }
+    .left p{
+        font-size: 3vw;
+        width: 85%;
+        margin-top: 4vw;
+    }
+    .left button{
+        padding: 3vw 6vw;
+        font-size: 3.5vw;
+        border-radius: 1vw;
+        margin-top: 4vw;
+    }
+}
+::-webkit-scrollbar{
+    display: none;
+}
